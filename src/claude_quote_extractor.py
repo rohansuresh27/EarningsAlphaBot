@@ -13,9 +13,7 @@ class ClaudeQuoteExtractor:
     
     def __init__(self):
         """Initialize the Claude client."""
-        self.client = anthropic.Anthropic(
-            api_key=os.environ.get('ANTHROPIC_API_KEY')
-        )
+        self.client = client  # Use the already initialized client
 
     def extract_quotes(self, text: str, company_name: str) -> List[Dict]:
         """
