@@ -31,7 +31,7 @@ class ClaudeQuoteExtractor:
 Context: Focus on insights, strategic shifts, and market observations. Look for forward-looking statements, CEO/executive perspectives, and emerging trends that could impact stock performance.
 
 For each quote, provide:
-1. Who said it (e.g., CEO, CFO)
+1. The speakers name, i.e Who said it (e.g., CEO, CFO): [SPEAKER]
 2. A brief, catchy description of the quote's significance
 3. The exact quote from the transcript
 4. Make it Twitter-friendly
@@ -48,9 +48,9 @@ Return exactly 10 quotes in this format, focusing on the most impactful insights
 
         # Get Claude's analysis
         message = self.client.messages.create(
-            model="claude-3-opus-20240229",
+            model="anthropic.claude-3-5-sonnet-20241022",
             max_tokens=2000,
-            temperature=0,
+            temperature=0.5,
             messages=[
                 {
                     "role": "user",
