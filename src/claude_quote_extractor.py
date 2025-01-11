@@ -8,9 +8,10 @@ if not os.getenv("ANTHROPIC_API_KEY"):
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
+
 class ClaudeQuoteExtractor:
     """Extract quotes from earnings call transcripts using Claude API."""
-    
+
     def __init__(self):
         """Initialize the Claude client."""
         self.client = client  # Use the already initialized client
@@ -28,11 +29,11 @@ class ClaudeQuoteExtractor:
         """
         prompt = f"""You are an expert financial analyst. Analyze this earnings call transcript and identify the 10 most compelling quotes.
         
-Context: Focus on insights, strategic shifts, and market observations. Look for forward-looking statements, CEO/executive perspectives, and emerging trends that could impact stock performance.
+Context: Focus on most compelling insights, strategic shifts, and market observations. Look for forward-looking statements, CEO/executive perspectives, future outlooks, growth projections and emerging trends that could impact stock performance.
 
 For each quote, provide:
 1. The speakers name, i.e Who said it (e.g., CEO, CFO): [SPEAKER]
-2. A brief, catchy description of the quote's significance
+2. A brief and catchy description of the quote's significance.
 3. The exact quote from the transcript
 4. Make it Twitter-friendly
 
@@ -48,31 +49,29 @@ Return exactly 10 quotes in this format, focusing on the most impactful insights
 
         # Get Claude's analysis
         message = self.client.messages.create(
-            model="anthropic.claude-3-5-sonnet-20241022",
+            model="claude-3-5-sonnet-20241022",
             max_tokens=2000,
             temperature=0.5,
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ]
-        )
-        
+            messages=[{
+                "role": "user",
+                "content": prompt
+            }])
+
         # Parse response and structure quotes
         quotes = []
         raw_quotes = message.content[0].text.strip().split('\n\n')
-        
+
         for quote in raw_quotes:
             if not quote.strip():
                 continue
-            
+
             # Parse the quote components
             try:
                 header, quote_text, hashtag = quote.split('\n')
-                speaker = header.split(' on ')[0].replace(f"{company_name} ", "")
+                speaker = header.split(' on ')[0].replace(
+                    f"{company_name} ", "")
                 description = header.split(' on ')[1].rstrip(':')
-                
+
                 quotes.append({
                     'company': company_name,
                     'speaker': speaker,
@@ -82,7 +81,7 @@ Return exactly 10 quotes in this format, focusing on the most impactful insights
                 })
             except Exception as e:
                 print(f"Warning: Failed to parse quote: {str(e)}")
-                
+
         return quotes
 
     def save_quotes_to_json(self, quotes: List[Dict], output_path: str):
