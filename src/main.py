@@ -36,8 +36,8 @@ def main():
                         # Extract text from PDF
                         text = pdf_processor.extract_text(pdf_path)
 
-                        # Extract company name from filename (remove .pdf and use as company name)
-                        company_name = os.path.splitext(filename)[0].replace('_', ' ').title()
+                        # Extract company name from filename (split by _Q and take first part)
+                        company_name = filename.split('_Q')[0].replace('_', ' ')
 
                         # Extract quotes using Claude
                         quotes = quote_extractor.extract_quotes(text, company_name)
