@@ -3,6 +3,11 @@ import json
 import anthropic
 from typing import List, Dict
 
+if not os.getenv("ANTHROPIC_API_KEY"):
+    raise Exception("Missing ANTHROPIC_API_KEY in secrets")
+
+client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
 class ClaudeQuoteExtractor:
     """Extract quotes from earnings call transcripts using Claude API."""
     
