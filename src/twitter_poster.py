@@ -50,7 +50,7 @@ def test_twitter_connection():
     """Test Twitter API connection"""
     try:
         client = setup_twitter_client()
-        client.get_me()
+        client.get_me(user_auth=False)
         print("Twitter API connection successful!")
         return True
     except Exception as e:

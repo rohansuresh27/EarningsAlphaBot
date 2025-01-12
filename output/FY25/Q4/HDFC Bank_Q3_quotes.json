@@ -2,71 +2,47 @@
   {
     "company": "HDFC Bank",
     "speaker": "CEO",
-    "speaker_name": "",
+    "speaker_name": "Sashidhar Jagdishan",
     "description": "Growth Trajectory",
     "quote": "FY '25, we would probably grow slower than the system. FY '26, we may be at or around the system growth rate. FY '27, we should be faster than the system growth rate.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
-    "speaker": "CEO",
-    "speaker_name": "",
+    "speaker": "CFO",
+    "speaker_name": "Srinivasan Vaidyanathan",
     "description": "Deposit Growth",
-    "quote": "Despite intense competition and the competitive environment, deposit growth has been very healthy. On an average basis, we have grown around 15% year-on-year. Retail branch continues to contribute around 80% to 85%, in fact, to be precise, 84% of the total deposits.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CFO",
-    "speaker_name": "",
-    "description": "LDR Normalization",
-    "quote": "We went all the way to 110%. And rightfully so because it was funded through longer-term borrowings... The thought process we had is that we would take four, five years to be at that level of what historically we have run, which is the mid-80s to high 80s.",
+    "quote": "On an average basis, we have grown around 15% year-on-year. Retail branch continues to contribute around 80% to 85%, in fact, to be precise, 84% of the total deposits.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CEO",
-    "speaker_name": "",
-    "description": "Asset Quality",
-    "quote": "We are in an extremely comfortable position. Obviously, there are risks in the system. The impact of what's going to happen in the macro side is something that you and I may not be able to predict, but we are well positioned as we speak looking at our portfolio.",
+    "speaker_name": "Sashidhar Jagdishan",
+    "description": "Net Interest Margins",
+    "quote": "We have been operating in a certain tight range. I think that should be maintained. In the medium term, I think we should be able to manage these margins in this particular range.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
-    "speaker_name": "",
+    "speaker_name": "Srinivasan Vaidyanathan",
     "description": "Fee Income",
-    "quote": "Fees at about INR8,000 crores, grew by about 17% year-on-year. Third-party products, the distribution products have been quite strong. It grew by almost 32% in this quarter, year-on-year.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CFO",
-    "speaker_name": "",
-    "description": "Digital Banking Growth",
-    "quote": "Credits that are coming into the accounts, they are robustly growing, growing in 20s... that's again contributed by new customers, too. I'm talking about adding every quarter, a little more than 2 million customer base coming in.",
+    "quote": "Fees at about INR8,000 crores, grew by about 17% year-on-year. Third-party products, the distribution products have been quite strong. It grew by almost 32% in this quarter.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CEO",
-    "speaker_name": "",
-    "description": "NIM Outlook",
-    "quote": "We have maintained a very matched modified duration of our balance sheet. So, our view is that we should not have too much of an impact in the range at which we have been operating the margins in the near term.",
+    "speaker_name": "Sashidhar Jagdishan",
+    "description": "Asset Quality",
+    "quote": "We are in an extremely comfortable position. Obviously, there are risks in the system. The impact of what's going to happen in the macro side is something that you and I may not be able to predict, but we are well positioned.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
-    "speaker_name": "",
-    "description": "External Benchmark Lending",
-    "quote": "The loans that are floating, our external benchmark is roughly about 69%, 70% or thereabouts which is similar to what last quarter or the previous quarter that we had mentioned.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CEO",
-    "speaker_name": "",
+    "speaker_name": "Srinivasan Vaidyanathan",
     "description": "Branch Expansion",
     "quote": "We grew 240-odd branches in this quarter, 350 something for the year so far. Last year, we grew 917 branches. Our objective has been to make those investments and branches now when the credit has been benign.",
     "hashtag": "#HDFCBank"
@@ -74,9 +50,33 @@
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
-    "speaker_name": "",
-    "description": "Market Share",
-    "quote": "The industry has grown anywhere between 10.5%, 11%. And we have grown more than that, gaining market share any time period, if you take a year, three years or five years, between 50 to 70 basis points a year.",
+    "speaker_name": "Srinivasan Vaidyanathan",
+    "description": "External Benchmark Lending",
+    "quote": "The loans that are floating, our external benchmark is roughly about 69%, 70% or thereabouts which is similar to what last quarter or the previous quarter that we had mentioned.",
+    "hashtag": "#HDFCBank"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CEO",
+    "speaker_name": "Sashidhar Jagdishan",
+    "description": "Liquidity Coverage Ratio",
+    "quote": "The 129 or whatever that you're seeing is probably a kind of a temporary phenomenon... At some point in time, I think it will normalize to the median levels at which we have operated.",
+    "hashtag": "#HDFCBank"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CFO",
+    "speaker_name": "Srinivasan Vaidyanathan",
+    "description": "Customer Acquisition",
+    "quote": "Adding every quarter, a little more than 2 million customer base coming in, shows that the credits do increase, and we are seeing robust increase in the credits.",
+    "hashtag": "#HDFCBank"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CFO",
+    "speaker_name": "Srinivasan Vaidyanathan",
+    "description": "Retail Asset Quality",
+    "quote": "If you look at the non-performing loans on the retail side, our non-performing loans, GNPAs at 1.36% or thereabouts, retail GNPA is at about 0.8%.",
     "hashtag": "#HDFCBank"
   }
 ]
