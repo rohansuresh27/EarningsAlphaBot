@@ -39,5 +39,17 @@ def post_quotes():
         except Exception as e:
             print(f"Error posting tweet: {str(e)}")
 
+def test_twitter_connection():
+    """Test Twitter API connection"""
+    try:
+        client = setup_twitter_client()
+        client.get_me()
+        print("Twitter API connection successful!")
+        return True
+    except Exception as e:
+        print(f"Twitter API connection failed: {str(e)}")
+        return False
+
 if __name__ == "__main__":
-    post_quotes()
+    if test_twitter_connection():
+        post_quotes()
