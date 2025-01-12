@@ -10,20 +10,26 @@ CALLBACK_URL = f"https://{os.getenv('REPL_SLUG')}.{os.getenv('REPL_OWNER')}.repl
 
 def setup_twitter_client() -> tweepy.Client:
     """Setup Twitter API client using Bearer token"""
-    auth = tweepy.OAuthHandler(
-        os.getenv('TWITTER_CONSUMER_KEY'),
-        os.getenv('TWITTER_CONSUMER_SECRET')
-    )
-    auth.set_access_token(
-        os.getenv('TWITTER_ACCESS_TOKEN'),
-        os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
-    )
+    # Get credentials
+    consumer_key = os.getenv('TWITTER_CONSUMER_KEY')
+    consumer_secret = os.getenv('TWITTER_CONSUMER_SECRET')
+    access_token = os.getenv('TWITTER_ACCESS_TOKEN')
+    access_token_secret = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
+    
+    # Validate credentials
+    if not all([consumer_key, consumer_secret, access_token, access_token_secret]):
+        missing = []
+        if not consumer_key: missing.append('TWITTER_CONSUMER_KEY')
+        if not consumer_secret: missing.append('TWITTER_CONSUMER_SECRET')
+        if not access_token: missing.append('TWITTER_ACCESS_TOKEN')
+        if not access_token_secret: missing.append('TWITTER_ACCESS_TOKEN_SECRET')
+        raise ValueError(f"Missing Twitter credentials: {', '.join(missing)}")
     
     client = tweepy.Client(
-        consumer_key=os.getenv('TWITTER_CONSUMER_KEY'),
-        consumer_secret=os.getenv('TWITTER_CONSUMER_SECRET'),
-        access_token=os.getenv('TWITTER_ACCESS_TOKEN'),
-        access_token_secret=os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
+        consumer_key=consumer_key,
+        consumer_secret=consumer_secret,
+        access_token=access_token,
+        access_token_secret=access_token_secret
     )
     return client
 
