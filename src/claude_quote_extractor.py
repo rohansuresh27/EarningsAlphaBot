@@ -99,10 +99,13 @@ Note: Please maintain verbatim accuracy in quotes while ensuring the social medi
                     f"{company_name} ", "")
                 description = header.split(' on ')[1].rstrip(':')
 
-                # Extract speaker role and name
-                speaker_parts = speaker.split(' (')
-                speaker_role = speaker_parts[0].strip()
-                speaker_name = speaker_parts[1].rstrip(')') if len(speaker_parts) > 1 else ''
+                # Extract speaker role and name from format "ROLE [NAME]"
+                if '[' in speaker and ']' in speaker:
+                    speaker_role = speaker.split('[')[0].strip()
+                    speaker_name = speaker.split('[')[1].split(']')[0].strip()
+                else:
+                    speaker_role = speaker
+                    speaker_name = ''
                 
                 quotes.append({
                     'company': company_name,
