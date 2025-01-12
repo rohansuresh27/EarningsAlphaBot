@@ -46,10 +46,23 @@ def post_quotes():
         except Exception as e:
             print(f"Error posting tweet: {str(e)}")
 
+def setup_oauth2_client():
+    """Setup OAuth2 Twitter client"""
+    oauth2_handler = tweepy.OAuth2UserHandler(
+        client_id=os.getenv('TWITTER_CONSUMER_KEY'),
+        client_secret=os.getenv('TWITTER_CONSUMER_SECRET'),
+        redirect_uri=CALLBACK_URL,
+        scope=["tweet.read", "tweet.write", "users.read"]
+    )
+    return oauth2_handler
+
 def test_twitter_connection():
     """Test Twitter API connection"""
     try:
-        client = setup_twitter_client()
+        # Use OAuth2 for authentication
+        oauth2_handler = setup_oauth2_client()
+        access_token = oauth2_handler.fetch_token()
+        client = tweepy.Client(access_token["access_token"])
         client.get_me(user_auth=False)
         print("Twitter API connection successful!")
         return True
