@@ -9,13 +9,15 @@ from typing import List, Dict
 CALLBACK_URL = f"https://{os.getenv('REPL_SLUG')}.{os.getenv('REPL_OWNER')}.repl.co/oauth2callback"
 
 def setup_twitter_client() -> tweepy.Client:
-    """Setup Twitter API client"""
-    # Debug: Print environment variables
-    print("Checking Twitter credentials:")
-    print(f"CONSUMER_KEY exists: {os.getenv('TWITTER_CONSUMER_KEY') is not None}")
-    print(f"CONSUMER_SECRET exists: {os.getenv('TWITTER_CONSUMER_SECRET') is not None}")
-    print(f"ACCESS_TOKEN exists: {os.getenv('TWITTER_ACCESS_TOKEN') is not None}")
-    print(f"ACCESS_TOKEN_SECRET exists: {os.getenv('TWITTER_ACCESS_TOKEN_SECRET') is not None}")
+    """Setup Twitter API client using Bearer token"""
+    auth = tweepy.OAuthHandler(
+        os.getenv('TWITTER_CONSUMER_KEY'),
+        os.getenv('TWITTER_CONSUMER_SECRET')
+    )
+    auth.set_access_token(
+        os.getenv('TWITTER_ACCESS_TOKEN'),
+        os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
+    )
     
     client = tweepy.Client(
         consumer_key=os.getenv('TWITTER_CONSUMER_KEY'),
@@ -59,11 +61,8 @@ def setup_oauth2_client():
 def test_twitter_connection():
     """Test Twitter API connection"""
     try:
-        # Use OAuth2 for authentication
-        oauth2_handler = setup_oauth2_client()
-        access_token = oauth2_handler.fetch_token()
-        client = tweepy.Client(access_token["access_token"])
-        client.get_me(user_auth=False)
+        client = setup_twitter_client()
+        client.get_me()
         print("Twitter API connection successful!")
         return True
     except Exception as e:
