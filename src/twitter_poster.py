@@ -5,6 +5,9 @@ import os
 import tweepy
 from typing import List, Dict
 
+# Configure callback URL
+CALLBACK_URL = f"https://{os.getenv('REPL_SLUG')}.{os.getenv('REPL_OWNER')}.repl.co/oauth2callback"
+
 def setup_twitter_client() -> tweepy.Client:
     """Setup Twitter API client"""
     client = tweepy.Client(
