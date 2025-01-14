@@ -9,14 +9,6 @@
   },
   {
     "company": "HDFC Bank",
-    "speaker": "CFO",
-    "speaker_name": "Srinivasan Vaidyanathan",
-    "description": "Deposit Growth",
-    "quote": "On an average basis, we have grown around 15% year-on-year. Retail branch continues to contribute around 80% to 85%, in fact, to be precise, 84% of the total deposits.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
     "speaker": "CEO",
     "speaker_name": "Sashidhar Jagdishan",
     "description": "Net Interest Margins",
@@ -27,8 +19,24 @@
     "company": "HDFC Bank",
     "speaker": "CFO",
     "speaker_name": "Srinivasan Vaidyanathan",
-    "description": "Fee Income",
+    "description": "Fee Income Growth",
     "quote": "Fees at about INR8,000 crores, grew by about 17% year-on-year. Third-party products, the distribution products have been quite strong. It grew by almost 32% in this quarter.",
+    "hashtag": "#HDFCBank"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CEO",
+    "speaker_name": "Sashidhar Jagdishan",
+    "description": "LDR Target",
+    "quote": "We had thought that it would take four, five years to be at that level of what historically we have run, which is the mid-80s to high 80s. Instead of that, we will do it within two to three years.",
+    "hashtag": "#HDFCBank"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CFO",
+    "speaker_name": "Srinivasan Vaidyanathan",
+    "description": "Deposit Growth",
+    "quote": "The deposits, what we have seen is that the industry has grown anywhere between 10.5%, 11%. And we have grown more than that, gaining market share any time period, if you take a year, three years or five years, between 50 to 70 basis points a year.",
     "hashtag": "#HDFCBank"
   },
   {
@@ -43,40 +51,32 @@
     "company": "HDFC Bank",
     "speaker": "CFO",
     "speaker_name": "Srinivasan Vaidyanathan",
-    "description": "Branch Expansion",
-    "quote": "We grew 240-odd branches in this quarter, 350 something for the year so far. Last year, we grew 917 branches. Our objective has been to make those investments and branches now when the credit has been benign.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CFO",
-    "speaker_name": "Srinivasan Vaidyanathan",
     "description": "External Benchmark Lending",
     "quote": "The loans that are floating, our external benchmark is roughly about 69%, 70% or thereabouts which is similar to what last quarter or the previous quarter that we had mentioned.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
+    "speaker": "CFO",
+    "speaker_name": "Srinivasan Vaidyanathan",
+    "description": "Branch Expansion",
+    "quote": "We grew 240-odd branches in this quarter, 350 something for the year so far. Last year, we grew 917 branches. Our objective has been to make those investments and branches now when the credit has been benign.",
+    "hashtag": "#HDFCBank"
+  },
+  {
+    "company": "HDFC Bank",
     "speaker": "CEO",
     "speaker_name": "Sashidhar Jagdishan",
-    "description": "Liquidity Coverage Ratio",
-    "quote": "The 129 or whatever that you're seeing is probably a kind of a temporary phenomenon... At some point in time, I think it will normalize to the median levels at which we have operated.",
+    "description": "Liquidity Environment",
+    "quote": "Liquidity has been gradually improving over the last couple of months. However, the deposit rates continue to be elevated and sticky -- probably the credit growth still outpaces deposit growth in the system.",
     "hashtag": "#HDFCBank"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
     "speaker_name": "Srinivasan Vaidyanathan",
-    "description": "Customer Acquisition",
-    "quote": "Adding every quarter, a little more than 2 million customer base coming in, shows that the credits do increase, and we are seeing robust increase in the credits.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CEO",
-    "speaker_name": "Sashidhar Jagdishan",
-    "description": "Credit Quality Strategy",
-    "quote": "We have been calibrating our growth depending on what we have been seeing - the early indicators. But I think the call that has been taken by our credit architecture has come out well yet again.",
+    "description": "Market Leadership",
+    "quote": "If you look at auto, we will be the number one. In cards, we are the number one. Various products on the retail non-mortgage when you think about it, we are the market leaders across various product segments.",
     "hashtag": "#HDFCBank"
   }
 ]
