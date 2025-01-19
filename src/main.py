@@ -14,13 +14,26 @@ def main():
         # Initialize processors
         pdf_processor = PDFProcessor()
         quote_extractor = ClaudeQuoteExtractor()
+        
+        # Get already processed files
+        processed_files = get_processed_files()
 
-        # Process all PDFs in the directory structure
+        # Process only new PDFs in the directory structure
         for fiscal_year in ['FY25', 'FY26']:
             for quarter in ['Q1', 'Q2', 'Q3', 'Q4']:
                 pdf_dir = os.path.join('pdfs', fiscal_year, quarter)
                 if not os.path.exists(pdf_dir):
                     continue
+                    
+                # Only process files that haven't been processed before
+                new_pdfs = [f for f in os.listdir(pdf_dir) 
+                           if f.endswith('.pdf') and 
+                           os.path.join(pdf_dir, f) not in processed_files]
+                
+                if not new_pdfs:
+                    continue
+                    
+                print(f"\nProcessing new PDFs in {fiscal_year}/{quarter}:")
 
                 # Process each PDF in the quarter directory
                 for filename in os.listdir(pdf_dir):

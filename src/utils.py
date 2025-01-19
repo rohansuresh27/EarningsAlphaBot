@@ -66,3 +66,16 @@ def get_all_pdf_files() -> List[str]:
                 pdf_files.append(os.path.join(root, file))
 
     return pdf_files
+def get_processed_files() -> set:
+    """Get set of already processed PDF files."""
+    processed = set()
+    for root, _, files in os.walk('output'):
+        for file in files:
+            if file.endswith('_quotes.json'):
+                # Convert output path back to source PDF path
+                pdf_name = file.replace('_quotes.json', '.pdf')
+                fiscal_year = os.path.basename(os.path.dirname(os.path.dirname(root)))
+                quarter = os.path.basename(os.path.dirname(root))
+                pdf_path = os.path.join('pdfs', fiscal_year, quarter, pdf_name)
+                processed.add(pdf_path)
+    return processed
