@@ -75,13 +75,14 @@ Note: Please maintain verbatim accuracy in quotes while ensuring the social medi
 """
 
         # Get Claude's analysis
-        message = self.client.messages.create(model="claude-3-haiku-20240307",
-                                              max_tokens=2000,
-                                              temperature=0.5,
-                                              messages=[{
-                                                  "role": "user",
-                                                  "content": prompt
-                                              }])
+        message = self.client.messages.create(
+            model="claude-3-5-sonnet-20241022",
+            max_tokens=2000,
+            temperature=0.5,
+            messages=[{
+                "role": "user",
+                "content": prompt
+            }])
 
         # Parse response and structure quotes
         quotes = []
@@ -105,7 +106,7 @@ Note: Please maintain verbatim accuracy in quotes while ensuring the social medi
                 else:
                     speaker_role = speaker
                     speaker_name = ''
-
+                
                 quotes.append({
                     'company': company_name,
                     'speaker': speaker_role,
