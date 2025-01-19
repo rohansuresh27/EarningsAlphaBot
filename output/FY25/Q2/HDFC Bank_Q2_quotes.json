@@ -3,9 +3,11 @@
     "company": "HDFC Bank",
     "speaker": "CEO",
     "speaker_name": "",
-    "description": "Growth Trajectory",
+    "description": "Growth Strategy",
     "quote": "FY '25, we would probably grow slower than the system. FY '26, we may be at or around the system growth rate. FY '27, we should be faster than the system growth rate.",
-    "hashtag": "#HDFCBank"
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "HDFC Bank",
@@ -13,23 +15,19 @@
     "speaker_name": "",
     "description": "Deposit Growth",
     "quote": "Despite intense competition and the competitive environment, deposit growth has been very healthy. On an average basis, we have grown around 15% year-on-year. Retail branch continues to contribute around 80% to 85%, in fact, to be precise, 84% of the total deposits.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CEO",
-    "speaker_name": "",
-    "description": "Net Interest Margins",
-    "quote": "The margins have been stable in the range that we have been talking about at 3.45% to 3.5%. It's printed at 3.46%.",
-    "hashtag": "#HDFCBank"
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Loan Mix",
-    "quote": "The floating rate loans are roughly about 69-70% of total loans, which is similar to what we had in the previous quarter.",
-    "hashtag": "#HDFCBank"
+    "description": "Fee Income",
+    "quote": "Fees at about INR8,000 crores, grew by 17% year-on-year. Third-party products, the distribution products have been quite strong. It grew by almost 32% in this quarter year-on-year.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "HDFC Bank",
@@ -37,46 +35,68 @@
     "speaker_name": "",
     "description": "Asset Quality",
     "quote": "The gross NPA continues to be stable at about 1.4%. In fact, the gross slippages at 1.2% is better than what we had witnessed same time last year.",
-    "hashtag": "#HDFCBank"
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Fee Income",
-    "quote": "Fees at about INR8,000 crores, grew by 17% year-on-year. Third-party products, the distribution products have been quite strong. It grew by almost 32% in this quarter.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CEO",
-    "speaker_name": "",
-    "description": "Branch Expansion",
-    "quote": "We grew 240-odd branches in this quarter, 350 something for the year so far. Last year, we grew 917 branches.",
-    "hashtag": "#HDFCBank"
-  },
-  {
-    "company": "HDFC Bank",
-    "speaker": "CEO",
-    "speaker_name": "",
     "description": "LCR Strategy",
-    "quote": "The LCR at 128% is above our normal operating range of 110-120%, reflecting our strategy to build liquidity cushion during this transition period.",
-    "hashtag": "#HDFCBank"
+    "quote": "The liquidity coverage ratio is at 128. We have told you that our target that we normally tend to operate is between 110 to 120. And somewhere historically, we operated at that 115 or thereabouts plus/minus 1%, 2%.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CEO",
+    "speaker_name": "",
+    "description": "Balance Sheet Repositioning",
+    "quote": "The bank LDR was closer to the 86%, call it even 87% if you round it, that was the rate that we operated before the merger. We went all the way to 110%. And rightfully so because it was funded through longer-term borrowings.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CEO",
     "speaker_name": "",
     "description": "Credit Quality Outlook",
-    "quote": "As we speak today, we are in an extremely comfortable position. Obviously, there are risks in the system... but we are well positioned looking at our portfolio and we don't have too much of a worry at this juncture.",
-    "hashtag": "#HDFCBank"
+    "quote": "As we speak today, we are in an extremely comfortable position. Obviously, there are risks in the system. The impact of what's going to happen in the macro side is something that you and I may not be able to predict, but we are well positioned.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "HDFC Bank",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Digital Banking",
-    "quote": "Customer credits into accounts are robustly growing in 20s, contributed by adding every quarter a little more than 2 million new customer base.",
-    "hashtag": "#HDFCBank"
+    "description": "External Benchmark Linked Loans",
+    "quote": "The loans that are floating, our external benchmark is, I think, roughly about 69%, 70% or thereabouts which is similar to what last quarter or the previous quarter that we had mentioned.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CEO",
+    "speaker_name": "",
+    "description": "Branch Expansion",
+    "quote": "We grew 240-odd branches in this quarter, 350 something for the year so far. Last year, we grew 917 branches. Our objective has been to make those investments and branches now when the credit has been benign.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "HDFC Bank",
+    "speaker": "CEO",
+    "speaker_name": "",
+    "description": "NIM Outlook",
+    "quote": "We have been operating in a certain tight range. I think that should be maintained. In the medium term, I think we should be able to manage these margins in this particular range.",
+    "hashtag": "#HDFCBank",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   }
 ]
