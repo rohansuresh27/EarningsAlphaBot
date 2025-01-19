@@ -3,6 +3,7 @@ import json
 import time
 import os
 import tweepy
+import argparse
 from typing import List, Dict
 
 # Configure callback URL
@@ -37,12 +38,15 @@ def format_tweet(quote: Dict) -> str:
     """Format quote as tweet"""
     return f"{quote['company']} {quote['speaker']} on {quote['description']}:\n\"{quote['quote']}\"\n{quote['hashtag']}"
 
-def post_quotes():
+def post_quotes(json_path: str):
     """Post quotes to Twitter"""
+    if not os.path.exists(json_path):
+        raise FileNotFoundError(f"JSON file not found: {json_path}")
+        
     client = setup_twitter_client()
     
     # Read quotes from JSON file
-    with open('output/FY25/Q4/HDFC Bank_Q3_quotes.json', 'r') as f:
+    with open(json_path, 'r') as f:
         quotes = json.load(f)
     
     for quote in quotes:
@@ -76,5 +80,9 @@ def test_twitter_connection():
         return False
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Post quotes from JSON file to Twitter')
+    parser.add_argument('json_path', type=str, help='Path to the JSON file containing quotes')
+    args = parser.parse_args()
+    
     if test_twitter_connection():
-        post_quotes()
+        post_quotes(args.json_path)
