@@ -16,13 +16,14 @@ class ClaudeQuoteExtractor:
         """Initialize the Claude client."""
         self.client = client  # Use the already initialized client
 
-    def extract_quotes(self, text: str, company_name: str) -> List[Dict]:
+    def extract_quotes(self, text: str, company_name: str, file_path: str = '') -> List[Dict]:
         """
         Extract the most compelling quotes using Claude API.
         
         Args:
             text (str): The earnings call transcript text
             company_name (str): Name of the company
+            file_path (str): Path to the PDF file
             
         Returns:
             List[Dict]: List of extracted quotes with metadata
@@ -108,7 +109,7 @@ Note: Please maintain verbatim accuracy in quotes while ensuring the social medi
                     speaker_name = ''
                 
                 # Get fiscal year and quarter from file path
-                path_parts = text.split('/')
+                path_parts = file_path.split(os.sep)
                 fiscal_year = next((part for part in path_parts if part.startswith('FY')), '')
                 quarter = next((part for part in path_parts if part.startswith('Q')), '')
                 

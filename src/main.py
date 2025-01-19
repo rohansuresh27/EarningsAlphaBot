@@ -54,7 +54,7 @@ def main():
 
                         # Extract quotes using Claude
                         quotes = quote_extractor.extract_quotes(
-                            text, company_name)
+                            text, company_name, pdf_path)
                             
                         # Add fiscal year and quarter info to each quote
                         for quote in quotes:
