@@ -37,11 +37,8 @@ def main():
 
                 print(f"\nProcessing new PDFs in {fiscal_year}/{quarter}:")
 
-                # Process each PDF in the quarter directory
-                for filename in os.listdir(pdf_dir):
-                    if not filename.endswith('.pdf'):
-                        continue
-
+                # Process only new PDFs
+                for filename in new_pdfs:
                     pdf_path = os.path.join(pdf_dir, filename)
                     try:
                         if not validate_pdf_file(pdf_path):
