@@ -3,7 +3,8 @@ import os
 import sys
 from pdf_processor import PDFProcessor
 from claude_quote_extractor import ClaudeQuoteExtractor
-from utils import setup_directory_structure, validate_pdf_file
+from utils import setup_directory_structure, validate_pdf_file, get_processed_files
+
 
 def main():
     """Main entry point for the earnings call analysis tool."""
@@ -14,7 +15,7 @@ def main():
         # Initialize processors
         pdf_processor = PDFProcessor()
         quote_extractor = ClaudeQuoteExtractor()
-        
+
         # Get already processed files
         processed_files = get_processed_files()
 
@@ -24,15 +25,16 @@ def main():
                 pdf_dir = os.path.join('pdfs', fiscal_year, quarter)
                 if not os.path.exists(pdf_dir):
                     continue
-                    
+
                 # Only process files that haven't been processed before
-                new_pdfs = [f for f in os.listdir(pdf_dir) 
-                           if f.endswith('.pdf') and 
-                           os.path.join(pdf_dir, f) not in processed_files]
-                
+                new_pdfs = [
+                    f for f in os.listdir(pdf_dir) if f.endswith('.pdf')
+                    and os.path.join(pdf_dir, f) not in processed_files
+                ]
+
                 if not new_pdfs:
                     continue
-                    
+
                 print(f"\nProcessing new PDFs in {fiscal_year}/{quarter}:")
 
                 # Process each PDF in the quarter directory
@@ -50,22 +52,30 @@ def main():
                         text = pdf_processor.extract_text(pdf_path)
 
                         # Extract company name from filename (split by _Q and take first part)
-                        company_name = filename.split('_Q')[0].replace('_', ' ')
+                        company_name = filename.split('_Q')[0].replace(
+                            '_', ' ')
 
                         # Extract quotes using Claude
-                        quotes = quote_extractor.extract_quotes(text, company_name)
+                        quotes = quote_extractor.extract_quotes(
+                            text, company_name)
 
                         # Save quotes to JSON
-                        output_dir = os.path.join('output', fiscal_year, quarter)
+                        output_dir = os.path.join('output', fiscal_year,
+                                                  quarter)
                         os.makedirs(output_dir, exist_ok=True)
-                        output_path = os.path.join(output_dir, f"{filename.replace('.pdf', '_quotes.json')}")
-                        quote_extractor.save_quotes_to_json(quotes, output_path)
+                        output_path = os.path.join(
+                            output_dir,
+                            f"{filename.replace('.pdf', '_quotes.json')}")
+                        quote_extractor.save_quotes_to_json(
+                            quotes, output_path)
 
                         # Print results
                         print(f"\nAnalysis results for {filename}:")
                         print("-" * 50)
                         for quote in quotes:
-                            print(f"{quote['company']} {quote['speaker']} on {quote['description']}:")
+                            print(
+                                f"{quote['company']} {quote['speaker']} on {quote['description']}:"
+                            )
                             print(f"\"{quote['quote']}\"")
                             print(f"{quote['hashtag']}")
                             print("-" * 30)
@@ -76,6 +86,7 @@ def main():
     except Exception as e:
         print(f"Fatal error: {str(e)}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
