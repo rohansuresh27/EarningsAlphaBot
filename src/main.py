@@ -55,6 +55,11 @@ def main():
                         # Extract quotes using Claude
                         quotes = quote_extractor.extract_quotes(
                             text, company_name)
+                            
+                        # Add fiscal year and quarter info to each quote
+                        for quote in quotes:
+                            quote['fiscal_year'] = fiscal_year
+                            quote['quarter'] = quarter
 
                         # Save quotes to JSON
                         output_dir = os.path.join('output', fiscal_year,

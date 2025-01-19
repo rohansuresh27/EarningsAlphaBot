@@ -36,7 +36,8 @@ def setup_twitter_client() -> tweepy.Client:
 
 def format_tweet(quote: Dict) -> str:
     """Format quote as tweet"""
-    return f"{quote['company']} {quote['speaker']} on {quote['description']}:\n\"{quote['quote']}\"\n{quote['hashtag']}"
+    fy_q_hashtag = f"#{quote['fiscal_year']}{quote['quarter']}" if 'fiscal_year' in quote and 'quarter' in quote else ""
+    return f"{quote['company']} {quote['speaker']} on {quote['description']}:\n\"{quote['quote']}\"\n{quote['hashtag']} {fy_q_hashtag}"
 
 def post_quotes(json_path: str):
     """Post quotes to Twitter"""
