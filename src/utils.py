@@ -74,8 +74,11 @@ def get_processed_files() -> set:
             if file.endswith('_quotes.json'):
                 # Convert output path back to source PDF path
                 pdf_name = file.replace('_quotes.json', '.pdf')
-                fiscal_year = os.path.basename(os.path.dirname(os.path.dirname(root)))
-                quarter = os.path.basename(os.path.dirname(root))
-                pdf_path = os.path.join('pdfs', fiscal_year, quarter, pdf_name)
-                processed.add(pdf_path)
+                # Get fiscal year and quarter from the current directory structure
+                parts = root.split(os.sep)
+                if len(parts) >= 3:  # Ensure we have enough path components
+                    fiscal_year = parts[-2]  # Second to last component
+                    quarter = parts[-1]      # Last component
+                    source_pdf = os.path.join('pdfs', fiscal_year, quarter, pdf_name)
+                    processed.add(source_pdf)
     return processed
