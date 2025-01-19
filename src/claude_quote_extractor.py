@@ -107,13 +107,18 @@ Note: Please maintain verbatim accuracy in quotes while ensuring the social medi
                     speaker_role = speaker
                     speaker_name = ''
                 
+                # Get fiscal year and quarter from file path
+                path_parts = text.split('/')
+                fiscal_year = next((part for part in path_parts if part.startswith('FY')), '')
+                quarter = next((part for part in path_parts if part.startswith('Q')), '')
+                
                 quotes.append({
                     'company': company_name,
                     'speaker': speaker_role,
                     'speaker_name': speaker_name,
                     'description': description,
                     'quote': quote_text.strip('"'),
-                    'hashtag': hashtag.strip()
+                    'hashtag': f"{hashtag.strip()} #{fiscal_year}{quarter}"
                 })
             except Exception as e:
                 print(f"Warning: Failed to parse quote: {str(e)}")
