@@ -54,7 +54,7 @@ def post_quotes(json_path: str):
             tweet = format_tweet(quote)
             client.create_tweet(text=tweet)
             print(f"Posted tweet: {tweet[:50]}...")
-            time.sleep(120)  # Wait 2 minutes between tweets
+            time.sleep(5)  # Wait 2 minutes between tweets
         except Exception as e:
             print(f"Error posting tweet: {str(e)}")
 
