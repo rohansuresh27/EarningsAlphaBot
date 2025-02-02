@@ -4,79 +4,149 @@
     "speaker": "CFO",
     "speaker_name": "",
     "description": "Growth Trajectory",
-    "quote": "We're still on track to achieve the 1,000 stores by March-25 and 2,000 stores by December-26, as per our guidance, though there could be ups and downs along the way.",
-    "hashtag": "#Zomato"
+    "quote": "Our business is growing more than 120% to 130% year on year. That's the capacity we have in terms of how much business we can service sustainably, profitably, and at good service levels.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "Zomato",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Capital Raise Strategy",
-    "quote": "The board has passed an enabling resolution to raise up to $1 billion, subject to shareholder approval. The actual fundraise size will be dependent on demand and market conditions at that time.",
-    "hashtag": "#Zomato"
+    "description": "Market Share Strategy",
+    "quote": "The share of Delhi NCR in our business continues to fall... from around 47% to less than 40% today. By GOV, we believe we are the largest player in all the major metros outside of Chennai and Hyderabad.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "Zomato",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Profitability Outlook",
+    "description": "Capital Raise",
+    "quote": "The board has passed an enabling resolution to raise up to $1 billion, which is also subject to shareholder approval. The actual fundraise size will be dependent on demand and market conditions.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "CFO",
+    "speaker_name": "",
+    "description": "Tax Position",
+    "quote": "We likely have a couple of years before we need to pay tax on operating income for the business. This tax expense you see is purely on the treasury income.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "Blinkit CEO",
+    "speaker_name": "",
+    "description": "Store Expansion",
+    "quote": "When we open new stores, it typically takes time to ramp up, so the take rates increase over time. With the mix of new stores increasing, you see a slight decrease in the overall take rate.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "CFO",
+    "speaker_name": "",
+    "description": "Quick Commerce Profitability",
     "quote": "The guidance we've given on margins is that we believe this business can reach 4% to 5% (Adjusted EBITDA margin). With every passing quarter, that seems more realistic and achievable to us.",
-    "hashtag": "#Zomato"
-  },
-  {
-    "company": "Zomato",
-    "speaker": "Blinkit CEO",
-    "speaker_name": "",
-    "description": "Market Expansion",
-    "quote": "Today, by GOV, we believe we are the largest player in all the major metros outside of Chennai and Hyderabad. The share of Delhi NCR has fallen from 47% to less than 40%.",
-    "hashtag": "#Zomato"
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "Zomato",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Tax Structure",
-    "quote": "As far as the profit from operations is concerned, those are still being offset by carry-forward losses, and that will continue for a while. We likely have a couple of years before we need to pay tax on operating income.",
-    "hashtag": "#Zomato"
-  },
-  {
-    "company": "Zomato",
-    "speaker": "Blinkit CEO",
-    "speaker_name": "",
-    "description": "Store Performance",
-    "quote": "In nearly every city or neighborhood we've entered, we've been positively surprised by the takeoff in the market. Our business is growing more than 120% to 130% year on year.",
-    "hashtag": "#Zomato"
-  },
-  {
-    "company": "Zomato",
-    "speaker": "CFO",
-    "speaker_name": "",
-    "description": "Market Dynamics",
-    "quote": "Quick commerce is appealing to a much wider demographic than food delivery. While in terms of absolute MTCs, quick commerce is still small, the overlap is reducing over time.",
-    "hashtag": "#Zomato"
+    "description": "Store Growth Targets",
+    "quote": "We are on track to achieve the 1,000 stores by March-25 and 2,000 stores by December-26, as per our guidance.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "Zomato",
     "speaker": "Blinkit CEO",
     "speaker_name": "",
     "description": "AOV Trends",
-    "quote": "Even in categories with slightly higher AOVs, we don't see that much of an upward increment because customers are not making really high involvement purchases on the platform.",
-    "hashtag": "#Zomato"
+    "quote": "While there would be AOV growth because of the proliferation of new categories and more customers buying in these categories, we don't think it will materially or dramatically change from the current levels.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "Zomato",
     "speaker": "CFO",
     "speaker_name": "",
-    "description": "Competition Strategy",
-    "quote": "We need to do what is right for the business first, and we don't think that discounting is going to help our business at this point in time. The fundraise is purely to strengthen the balance sheet.",
-    "hashtag": "#Zomato"
+    "description": "Quick Commerce Demographics",
+    "quote": "Quick commerce is appealing to a much wider demographic than food delivery... in like-for-like neighborhoods, we see that the overlap is reducing over time.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "CFO",
+    "speaker_name": "",
+    "description": "Consumption Trends",
+    "quote": "So far, we haven't seen any noticeable impact on our business, though we are watching it as we are aware that some other businesses are reporting it.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "CFO",
+    "speaker_name": "",
+    "description": "District App Strategy",
+    "quote": "At this point, the plan is to just transition the dining-out business, which we have been running for the last two years, and the new entertainment ticketing business we acquired, to the District app.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "CFO",
+    "speaker_name": "",
+    "description": "Market Model",
+    "quote": "We believe our current marketplace model works well for now as it benefits both our sellers and our customers. However, we will continue evaluating different options as they become available to us.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "Blinkit CEO",
+    "speaker_name": "",
+    "description": "Category Expansion",
+    "quote": "The categories we launched over the past year such as beauty, electronics, and toys are still growing categories. We're still learning which use cases within these categories have further room for growth.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
+  },
+  {
+    "company": "Zomato",
+    "speaker": "CFO",
+    "speaker_name": "",
+    "description": "Fixed Costs",
+    "quote": "The fixed cost below contribution has a few elements. There is marketing cost, server cost, people cost, and infrastructure cost. Quick commerce, Going-out and Hyperpure are high-growth businesses right now.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   },
   {
     "company": "Zomato",
     "speaker": "CFO",
     "speaker_name": "",
     "description": "Food Delivery Growth",
-    "quote": "We've always spoken about 20%+ GOV growth as guidance on a CAGR basis over the next few years. I don't think we've ever indicated that the business is likely to grow at 30% in the near term.",
-    "hashtag": "#Zomato"
+    "quote": "We've always spoken about 20%+ GOV growth as guidance on a CAGR basis over the next few years.",
+    "hashtag": "#Zomato #FY25Q2",
+    "fiscal_year": "FY25",
+    "quarter": "Q2"
   }
 ]
